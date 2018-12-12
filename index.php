@@ -5,6 +5,7 @@
   </head>
   <body>
 <?php
+    $_SESSION_START();
 
 /* SCRIPT FRONTAL AFFICHAGE DE CAPTCHA
 * AFFICHER UNE IMAGE GÉNÉRÉE EN PHP */
