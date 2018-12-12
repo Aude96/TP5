@@ -4,6 +4,8 @@
     <meta charset="utf-8">
   </head>
   <body>
+    <form method="POST">
+      <p> Veuillez saisir le code de sécurité!</p>
 <?php
     $_SESSION_START();
 
@@ -13,5 +15,8 @@
 echo "<img src='script-captchas.php' alt='captchas' />";
 
 ?>
+      <input type="text" name="captcha">
+      <input type="submit" name="envoyer">
+    </form>
   </body>
 </html>
