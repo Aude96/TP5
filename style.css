@@ -1,0 +1,37 @@
+*{
+	margin:0;
+	padding:0;
+}
+.page{
+	margin:2em 16em 0 16em;
+	padding:2em 1em 2em 20em;
+	border-color:darkblue;
+	border-style:solid;
+	border-width:1px;
+	box-shadow:3px 3px 12px 2px RVBa(16,45,95,1);
+	line-height:40px;
+}
+h1{
+	color:darkblue;
+	margin-bottom:1em;
+}
+input{
+	border-color:darkblue;
+	border-width:1px;
+}
+.envoi{
+	width:60px;
+	height:25px;
+	background-color:darkblue;
+	color:#ffffff;
+}
+.envoi:hover{
+	background-color:#9A9A9B;
+	color:#03216C;
+}
+.inform{
+	padding-left:5em;
+}
+#captcha2{
+	margin-left:2em;
+}

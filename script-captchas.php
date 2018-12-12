@@ -1,12 +1,7 @@
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-	</head>
-	<body>
 <?php
 
-	$_SESSION['captcha']
+	SESSION_START();
+	
 /****************************************************************
 * CAPTCHA GENERATEUR IMAGE EN PHP
 * /!\ PAS DE RETOUR D'ERREUR SUR LA GÉNÉRATION
@@ -50,6 +45,8 @@ function getCode($length, $chars) {
 /* APPEL DE LA FONCTION POUR RECUPERER UNE CHAINE ALEATOIRE */
 $code = getCode(5, $chaine);
 
+$_SESSION['captchas']=$code;
+
 /* RETOURNE UN A UN LES SEGMENTS DE LA CHAINE */
 $char1 = substr($code,0,1);
 $char2 = substr($code,1,1);
@@ -79,6 +76,4 @@ imagepng($image);
 imagedestroy($image);
 
 ?>
-		
-	</body>
-</html>
+
