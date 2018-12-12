@@ -6,6 +6,7 @@
 	<body>
 <?php
 
+	$_SESSION['captcha']
 /****************************************************************
 * CAPTCHA GENERATEUR IMAGE EN PHP
 * /!\ PAS DE RETOUR D'ERREUR SUR LA GÉNÉRATION
